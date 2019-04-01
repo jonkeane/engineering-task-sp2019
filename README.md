@@ -1,8 +1,8 @@
-# Research engineering task
+# Engineering task
 
 This project contains code and instructions for completing the Wikimedia
-Foundation's task for the Research Software Engineer position (see
-[the job description](https://boards.greenhouse.io/wikimedia/jobs/96659)).
+Foundation's task for the Sr. Software Engineer position (see
+[the job description](https://boards.greenhouse.io/wikimedia/jobs/1608084)).
 
 To complete the task, read the following problem description and implement a
 solution.  Please submit your solution (the code and a one-page description
@@ -10,13 +10,14 @@ how you approached this problem and why) to ahalfaker@wikimedia.org.
 
 ## The problem
 
-The research team at the Wikimedia Foundation builds computationally intensive
+The [Scoring Platform team](https://www.mediawiki.org/wiki/Wikimedia_Scoring_Platform_team)
+at the Wikimedia Foundation builds computationally intensive
 applications that need to work in production environments at the scale of
 Wikipedia.  One of these algorithms processes edits to pages in realtime.  
 Edits are saved roughly 1.2 times per second, but the algorithm can take
 anywhere between 0.1 and 10 seconds to process an edit.  As you might expect,
 processing these edit events in sequence is not an option since the computation
-takes too long.  Yet, the researchers need the result of this computation to be
+takes too long.  Yet, the users need the result of this computation to be
 output in-order.
 
 ## The task
@@ -33,7 +34,7 @@ implement your own solution in whatever language and use any 3rd party
 libraries you think are appropriate for the problem.
 
 If your solution works as we intend, you should be able to process the 5
-minute recording in less than 5 minutes and the output file will match the
+minute recording in less than 5 minutes and the output file will match the 
 order of the input file.
 
 ### Processing function ###
